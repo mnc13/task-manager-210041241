@@ -14,7 +14,7 @@
   }
 
   body {
-    background-color: #fcfbfc;
+    background-color: #b2d7fa;
     overflow-x: hidden;
   }
 }
@@ -59,3 +59,6 @@
   @apply bg-white p-4 rounded-xl shadow-md shadow-gray-100 border border-gray-200/50;
 }
 
+.auth-layout {
+  background: linear-gradient(to right, #a7f0fd, #6ebdff);
+}
