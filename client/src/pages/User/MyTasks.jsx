@@ -21,6 +21,9 @@ const MyTasks = () => {
         params: {
           status: filterStatus === "All" ? "" : filterStatus,
         },
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+        },
       });
 
       setAllTasks(response.data?.tasks?.length > 0 ? response.data.tasks : []);
